@@ -2,83 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skylink Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: white;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: #0f172a;
-        }
-        header nav a {
-            margin: 0 1rem;
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .hero {
-            background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-            padding: 6rem 2rem;
-            text-align: left;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-        .cta-btn {
-            margin-top: 1.5rem;
-            background-color: #22c55e;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .features, .products, .trust {
-            padding: 2rem;
-            text-align: center;
-        }
-        .products .card {
-            background-color: #1e293b;
-            border-radius: 16px;
-            padding: 1rem;
-            margin: 1rem;
-            display: inline-block;
-            width: 250px;
-        }
-        .products img {
-            width: 100%;
-            border-radius: 12px;
-        }
-        .card button {
-            background-color: #22c55e;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            margin-top: 1rem;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div><strong>SKYLINK SOLUTIONS</strong></div>
+        <div class="logo">SKYLINK SOLUTIONS</div>
         <nav>
             <a href="#">Home</a>
             <a href="#">Shop</a>
@@ -89,37 +20,39 @@
             <a href="#">Register</a>
         </nav>
     </header>
-    <div class="hero">
-        <h1>Welcome to <br>Skylink Solutions</h1>
+    <section class="hero">
+        <h1>Welcome to<br>Skylink Solutions</h1>
         <p>Get ₹200 OFF on your first order!</p>
-        <button class="cta-btn">Chat with Us</button>
-    </div>
-    <div class="features">
-        <p>Drones starting from ₹3,999 to ₹3 Lakh+ | Warranty Provided | Made in India</p>
-    </div>
-    <div class="products">
+        <a href="https://wa.me/919900405101" class="whatsapp-button">Chat with Us</a>
+    </section>
+    <section class="info">
+        <p>Drones starting from ₹3,999 to ₹3 Lakh+</p>
+        <p>Warranty Provided</p>
+        <p>Made in India</p>
+    </section>
+    <section class="products">
         <h2>Featured Products</h2>
-        <div class="card">
-            <img src="https://example.com/mavic-air.jpg" alt="Mavic Air 2">
+        <div class="product">
+            <img src="mavic.jpg" alt="Mavic Air 2">
             <h3>Mavic Air 2</h3>
             <p>₹55,000</p>
-            <button>Buy on WhatsApp</button>
+            <a href="https://wa.me/919900405101" class="buy">Buy on WhatsApp</a>
         </div>
-        <div class="card">
-            <img src="https://example.com/phantom-4.jpg" alt="Phantom 4 Pro">
+        <div class="product">
+            <img src="phantom.jpg" alt="Phantom 4 Pro">
             <h3>Phantom 4 Pro</h3>
             <p>₹1,50,000</p>
-            <button>Buy on WhatsApp</button>
+            <a href="https://wa.me/919900405101" class="buy">Buy on WhatsApp</a>
         </div>
-        <div class="card">
-            <img src="https://example.com/mini2.jpg" alt="Mini 2">
+        <div class="product">
+            <img src="mini.jpg" alt="Mini 2">
             <h3>Mini 2</h3>
             <p>₹45,000</p>
-            <button>Buy on WhatsApp</button>
+            <a href="https://wa.me/919900405101" class="buy">Buy on WhatsApp</a>
         </div>
-    </div>
-    <div class="trust">
-        <p>Trusted by 1M+ Customers | Trusted Quality | GUARANTEE</p>
-    </div>
+    </section>
+    <footer>
+        <p>Trusted by 1M+ Customers | GUARANTEE | TRUSTED</p>
+    </footer>
 </body>
 </html>
